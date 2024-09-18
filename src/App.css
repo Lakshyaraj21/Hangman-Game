@@ -1,0 +1,90 @@
+/* General reset for clean design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #4f86c6, #91a9cf);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.App {
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Current word display */
+p {
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 2px solid #4f86c6;
+  border-radius: 5px;
+  width: 60px;
+  text-align: center;
+  outline: none;
+  transition: 0.3s ease;
+  margin-bottom: 20px;
+}
+
+/* Hover effect for the input field */
+input[type="text"]:hover {
+  border-color: #3a6b9b;
+}
+
+/* Disabled input field after game ends */
+input[type="text"]:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+/* Remaining attempts and tried letters */
+p#remaining-attempts,
+p#tried-letters,
+p#message {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Message style */
+p#message {
+  color: #e74c3c; /* Red color for alerts */
+  font-weight: bold;
+}
+
+/* Success message style */
+.success {
+  color: #2ecc71; /* Green color for success */
+}
+
+/* Styling for hover and focus state */
+input[type="text"]:focus {
+  border-color: #2ecc71;
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.2);
+}
